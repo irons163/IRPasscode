@@ -1,0 +1,20 @@
+PODS:
+  - IRPasscode (0.1.3):
+    - UICKeyChainStore
+  - UICKeyChainStore (2.1.2)
+
+DEPENDENCIES:
+  - IRPasscode
+
+SPEC REPOS:
+  trunk:
+    - IRPasscode
+    - UICKeyChainStore
+
+SPEC CHECKSUMS:
+  IRPasscode: 5c91d99a6b9b156b64c0ea0cc7e6d6ed5e28a395
+  UICKeyChainStore: 85db518bb1d294366d15ec9b92a416c4e670518f
+
+PODFILE CHECKSUM: 27a1dc994587fadab1438c2a6d96b85fd2774ada
+
+COCOAPODS: 1.8.4

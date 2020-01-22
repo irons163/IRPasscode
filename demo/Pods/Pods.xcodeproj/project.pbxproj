@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		03636ACB9870181418FAFD29AE8AACEC /* UICKeyChainStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17BEA8B0CFAA0A24F4FE171704D88BF7 /* UICKeyChainStore.framework */; };
+		0C91807BDAA7DE49B2E2E73775517C9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460FF873481B3F87C44EEA8E0AE764B1 /* Foundation.framework */; };
+		16CF16A5F6EED6D79E833CB0F2F77089 /* IRLanguageManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B719CD946C1628B87DD42AB1A0EE4F0 /* IRLanguageManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2BF6D978C894B9D10468CA63408322A4 /* IRCustomIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D604F5A05C8D6145429F3484D6B4F5 /* IRCustomIconButton.m */; };
+		308AF19CF2659B4DEE390B9A6C66D52E /* ColorDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4397BDF6E8A7CA456C14ECDC0AA45CFC /* ColorDefine.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		35348DA145056A3EF11EA0F182A9C9CE /* IRPasscodeLockSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948AAE81348AD9DCB3E44A7BC0556832 /* IRPasscodeLockSettingViewController.m */; };
+		382028FB17E663F29C51CA43DDD5F63A /* Utilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 12C87EAEC83BB47A806E3FF0B239FA5B /* Utilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		42A86244CA4374EA21A636DD7F797B52 /* Pods-demo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DC5ABE867DFAFEEFE65EB904EC044 /* Pods-demo-dummy.m */; };
+		470538F64852E3D6F02BC01329A04179 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460FF873481B3F87C44EEA8E0AE764B1 /* Foundation.framework */; };
+		47522BB6A76EFF432391C87F92FBE296 /* IRSecurityPinManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA365ACF49306D7DE2033859E6F60BC /* IRSecurityPinManager.m */; };
+		48A8A355584A22E10ABCB01487C52DA1 /* IRPasscodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7376EAE99248A40C1741CAC91E64F55F /* IRPasscodeView.m */; };
+		4EB64A983D9301B71087BC923E54E30B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB483186C27C09F9AB03893BEB3A6301 /* Assets.xcassets */; };
+		52BD791D268FA18940E4A8E9ABEC04CE /* IRPasscode-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FCB8BCC2B026CCD4D6E9AEEDE40C8DC7 /* IRPasscode-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		567D4ECF7886A5ACFD55C97E245CAC8D /* IRPasscode.h in Headers */ = {isa = PBXBuildFile; fileRef = DA3DB9E15F6B39F005E69ED2566B1863 /* IRPasscode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6027468E96F04039A365F39E1B8914D2 /* IRCustomIconButton.h in Headers */ = {isa = PBXBuildFile; fileRef = CFB2DEC05B9FD3A30ED7DC3B82660E1D /* IRCustomIconButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61D1268E163753A464948CFDA0373F4B /* IRSecurityPinButton.h in Headers */ = {isa = PBXBuildFile; fileRef = DCAF7FAB437AC809FEE5004B2935E64E /* IRSecurityPinButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		63EA0DF98D8F3548EBEDABFA5512821F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1677E6A63B4BB0B24F36E97382B3C261 /* Security.framework */; };
+		7102F4B90FCB51093A29BCF634D0F2AB /* IRPasscodeLockSettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24783EAE9C541170005EC3745C73FAFA /* IRPasscodeLockSettingViewController.xib */; };
+		77C9377A60360ED72999311F3F34BD6C /* IRLanguageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A955C51C900C5C3D21A70D8F3FFACF71 /* IRLanguageManager.m */; };
+		837963EE3379ED0E485E306FD325095C /* Pods-demo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 919022BC48F9439E29669B27B83A8482 /* Pods-demo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84B3CCA944D67DDEDF5E094034C1A03C /* UICKeyChainStore.m in Sources */ = {isa = PBXBuildFile; fileRef = D46826DA8E6CB76659B2512A1EE97B78 /* UICKeyChainStore.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8D674DD50688478C3DD81F408FB3FDB4 /* IRPasscodeView.h in Headers */ = {isa = PBXBuildFile; fileRef = BE00644715D0999EFE975AC6648380E2 /* IRPasscodeView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		991B967D053CD484BD88285C01A50ADD /* IRFingerPrintVerify.h in Headers */ = {isa = PBXBuildFile; fileRef = B82FD6DBD4DD051006F9D90E2BD48CEC /* IRFingerPrintVerify.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9CCAD362E849C34DA04B66559A90FA51 /* UIImage+Bundle.h in Headers */ = {isa = PBXBuildFile; fileRef = 232D80F81E5C9FC4FD80DDDF82A0A9BC /* UIImage+Bundle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AA79C1135D17B6BB7926CD612174ECE9 /* UIColor+Helper.h in Headers */ = {isa = PBXBuildFile; fileRef = 303BF0362A704D69C308988E69EC3174 /* UIColor+Helper.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0F325DE0FD1C91DAE3A2DC7030D73A6 /* NSBundle+IRLocalizedString.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A3F4BA107BF4C96D1C2600A92B644A /* NSBundle+IRLocalizedString.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B36B1582DADD7C28F26AC0353B26B91E /* UICKeyChainStore.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A7CFD73AEB2FE7E6395944A59E43BF /* UICKeyChainStore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BCC8EBB6A64AB400868F9EB768139595 /* IRPasscodeBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2CEC664779044E4F821F6BC16175AD21 /* IRPasscodeBundle.bundle */; };
+		BD3B2239F3514DFCC3F5A4C046264069 /* UIColor+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED724CCFB0D70204CA9D8D4981AA0A0 /* UIColor+Helper.m */; };
+		BD4F792DA3099CB6943ED4297E484F18 /* IRSecurityPinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7CB38A3B5652EB1598397AA9F403640 /* IRSecurityPinViewController.m */; };
+		C27970FC775F7CD1AEF9A1E154DCB7F8 /* IRPasscode-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FBF10A0BF3FA305B5FC9F7E6A235911 /* IRPasscode-dummy.m */; };
+		D9E548184D41083C63A6D4A3F8829FDD /* NSBundle+IRLocalizedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 8052D610592E2466F025354F499A843A /* NSBundle+IRLocalizedString.m */; };
+		DFDA55631A4A14A42C0230DDC7DDC647 /* UICKeyChainStore-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFF2AB7C69AC6B752A32C0A345CAC16B /* UICKeyChainStore-dummy.m */; };
+		E550EC1C21E55DA76AC440C3E15036E6 /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 644BCC96A24505D4948042A7940DD4F5 /* Utilities.m */; };
+		E6E3C568462D6AD8F96F56BAD81EF676 /* IRSecurityPinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 567D10635AAA6D6000DE55E53EBEF7E9 /* IRSecurityPinViewController.xib */; };
+		E7D22E930B1F544444E5E6285969EDD7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 460FF873481B3F87C44EEA8E0AE764B1 /* Foundation.framework */; };
+		E9E1E16CD01BA3A2B506FE9B4E301708 /* IRPasscodeLockSettingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3183F7E98BB72A324C3F7789084E36F5 /* IRPasscodeLockSettingViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA7025C07CD68BD2987421C07BA83331 /* UICKeyChainStore-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3339BC519E4E66CEB777EC399C7B0924 /* UICKeyChainStore-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB2644FB33F81EA665D69017D28AE7AD /* IRSecurityPinManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0020003B35C9287DB6C5740E8B65EC71 /* IRSecurityPinManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EC9CCA82D376736E436BA72E429D212C /* UIImage+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = A76D07578C3CBCFB6A741B542E2621B0 /* UIImage+Bundle.m */; };
+		EE8995F3C825DF04782DF4EF78E95F31 /* IRSecurityPinViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = C22FDEC8AE8758BB0551E9B465ED5D61 /* IRSecurityPinViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F87E1815EB87B6E353F6C2A63F364E75 /* IRFingerPrintVerify.m in Sources */ = {isa = PBXBuildFile; fileRef = 4545353101C233EFE2E4A1425415C491 /* IRFingerPrintVerify.m */; };
+		FE82C28C3D0AD7805E270D6A437A2AE0 /* IRSecurityPinButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E425871CA94DE623A8E45EF286523FB /* IRSecurityPinButton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1B2861E0117BB89740B2FC8E0DCAF839 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7406ECC476A62C8FA502AD0E8D1240BE;
+			remoteInfo = UICKeyChainStore;
+		};
+		460EF6AC1376A97003C7CD145C4F9107 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6782D808343CEB2EC3097B4B53BAE0A1;
+			remoteInfo = IRPasscode;
+		};
+		CDAAADE00E20C82419C3A439D732ED6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7406ECC476A62C8FA502AD0E8D1240BE;
+			remoteInfo = UICKeyChainStore;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0020003B35C9287DB6C5740E8B65EC71 /* IRSecurityPinManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRSecurityPinManager.h; path = IRPasscode/Class/SecurityView/IRSecurityPinManager.h; sourceTree = "<group>"; };
+		056C11651D9181CFD60992F50710A1E6 /* Pods-demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-demo.release.xcconfig"; sourceTree = "<group>"; };
+		05C2FFD5036D854D1744084937CFE76F /* UICKeyChainStore-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-prefix.pch"; sourceTree = "<group>"; };
+		101154812BF3AAAF50B8C9466DF4C6E4 /* IRPasscode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IRPasscode.framework; path = IRPasscode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12C87EAEC83BB47A806E3FF0B239FA5B /* Utilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = IRPasscode/Class/Utility/Utilities.h; sourceTree = "<group>"; };
+		1535BD4A38E6C13ACCBC81A824BB78F3 /* UICKeyChainStore-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UICKeyChainStore-Info.plist"; sourceTree = "<group>"; };
+		1677E6A63B4BB0B24F36E97382B3C261 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		171784CD7F89555EFD77B2A0479363CA /* Pods-demo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-demo-Info.plist"; sourceTree = "<group>"; };
+		17BEA8B0CFAA0A24F4FE171704D88BF7 /* UICKeyChainStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UICKeyChainStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		232D80F81E5C9FC4FD80DDDF82A0A9BC /* UIImage+Bundle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Bundle.h"; path = "IRPasscode/Class/Utility/UIImage+Bundle.h"; sourceTree = "<group>"; };
+		24783EAE9C541170005EC3745C73FAFA /* IRPasscodeLockSettingViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IRPasscodeLockSettingViewController.xib; path = IRPasscode/Class/IRPasscodeLockSettingViewController.xib; sourceTree = "<group>"; };
+		2CEC664779044E4F821F6BC16175AD21 /* IRPasscodeBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = IRPasscodeBundle.bundle; path = IRPasscode/IRPasscodeBundle.bundle; sourceTree = "<group>"; };
+		303BF0362A704D69C308988E69EC3174 /* UIColor+Helper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+Helper.h"; path = "IRPasscode/Class/Utility/UIColor+Helper.h"; sourceTree = "<group>"; };
+		3183F7E98BB72A324C3F7789084E36F5 /* IRPasscodeLockSettingViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRPasscodeLockSettingViewController.h; path = IRPasscode/Class/IRPasscodeLockSettingViewController.h; sourceTree = "<group>"; };
+		3339BC519E4E66CEB777EC399C7B0924 /* UICKeyChainStore-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UICKeyChainStore-umbrella.h"; sourceTree = "<group>"; };
+		35C3A3D2E899152EF879D20F9EAC6DA7 /* IRPasscode-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IRPasscode-Info.plist"; sourceTree = "<group>"; };
+		42A3F4BA107BF4C96D1C2600A92B644A /* NSBundle+IRLocalizedString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSBundle+IRLocalizedString.h"; path = "IRPasscode/Class/Utility/NSBundle+IRLocalizedString.h"; sourceTree = "<group>"; };
+		4397BDF6E8A7CA456C14ECDC0AA45CFC /* ColorDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ColorDefine.h; path = IRPasscode/Class/Utility/ColorDefine.h; sourceTree = "<group>"; };
+		4545353101C233EFE2E4A1425415C491 /* IRFingerPrintVerify.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IRFingerPrintVerify.m; path = IRPasscode/Class/SecurityView/IRFingerPrintVerify.m; sourceTree = "<group>"; };
+		460FF873481B3F87C44EEA8E0AE764B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		4FE45AE5DAA8B1DF7D6099181AD9FA0A /* Pods-demo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-demo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		567D10635AAA6D6000DE55E53EBEF7E9 /* IRSecurityPinViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = IRSecurityPinViewController.xib; path = IRPasscode/Class/SecurityView/IRSecurityPinViewController.xib; sourceTree = "<group>"; };
+		620C2E500E91AE09F121C9670613B82F /* Pods_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_demo.framework; path = "Pods-demo.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		644BCC96A24505D4948042A7940DD4F5 /* Utilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = IRPasscode/Class/Utility/Utilities.m; sourceTree = "<group>"; };
+		6B7DBCC1FE0FBBC6AF5131E720EE17D5 /* IRPasscode.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IRPasscode.xcconfig; sourceTree = "<group>"; };
+		7376EAE99248A40C1741CAC91E64F55F /* IRPasscodeView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IRPasscodeView.m; path = IRPasscode/Class/SecurityView/IRPasscodeView.m; sourceTree = "<group>"; };
+		78D604F5A05C8D6145429F3484D6B4F5 /* IRCustomIconButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IRCustomIconButton.m; path = IRPasscode/Class/CustomView/IRCustomIconButton.m; sourceTree = "<group>"; };
+		7B719CD946C1628B87DD42AB1A0EE4F0 /* IRLanguageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRLanguageManager.h; path = IRPasscode/Class/Utility/IRLanguageManager.h; sourceTree = "<group>"; };
+		7C5DC5ABE867DFAFEEFE65EB904EC044 /* Pods-demo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-demo-dummy.m"; sourceTree = "<group>"; };
+		7E425871CA94DE623A8E45EF286523FB /* IRSecurityPinButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IRSecurityPinButton.m; path = IRPasscode/Class/SecurityView/IRSecurityPinButton.m; sourceTree = "<group>"; };
+		8052D610592E2466F025354F499A843A /* NSBundle+IRLocalizedString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+IRLocalizedString.m"; path = "IRPasscode/Class/Utility/NSBundle+IRLocalizedString.m"; sourceTree = "<group>"; };
+		8304FA02D2A592F4996BA412884CCA37 /* Pods-demo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-demo.modulemap"; sourceTree = "<group>"; };
+		8ED724CCFB0D70204CA9D8D4981AA0A0 /* UIColor+Helper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Helper.m"; path = "IRPasscode/Class/Utility/UIColor+Helper.m"; sourceTree = "<group>"; };
+		8FA365ACF49306D7DE2033859E6F60BC /* IRSecurityPinManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IRSecurityPinManager.m; path = IRPasscode/Class/SecurityView/IRSecurityPinManager.m; sourceTree = "<group>"; };
+		90A4052C43A6928606C513113AF8A723 /* UICKeyChainStore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = UICKeyChainStore.xcconfig; sourceTree = "<group>"; };
+		919022BC48F9439E29669B27B83A8482 /* Pods-demo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-demo-umbrella.h"; sourceTree = "<group>"; };
+		948AAE81348AD9DCB3E44A7BC0556832 /* IRPasscodeLockSettingViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IRPasscodeLockSettingViewController.m; path = IRPasscode/Class/IRPasscodeLockSettingViewController.m; sourceTree = "<group>"; };
+		969AEC1E26DA539C6D7EF7C62D74E06E /* UICKeyChainStore.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = UICKeyChainStore.modulemap; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9FBF10A0BF3FA305B5FC9F7E6A235911 /* IRPasscode-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IRPasscode-dummy.m"; sourceTree = "<group>"; };
+		A0A4D131DB063279AE8AF52001C682FE /* UICKeyChainStore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = UICKeyChainStore.framework; path = UICKeyChainStore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A76D07578C3CBCFB6A741B542E2621B0 /* UIImage+Bundle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Bundle.m"; path = "IRPasscode/Class/Utility/UIImage+Bundle.m"; sourceTree = "<group>"; };
+		A955C51C900C5C3D21A70D8F3FFACF71 /* IRLanguageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IRLanguageManager.m; path = IRPasscode/Class/Utility/IRLanguageManager.m; sourceTree = "<group>"; };
+		AA6F28936150B774D174F70EC133595F /* Pods-demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-demo.debug.xcconfig"; sourceTree = "<group>"; };
+		AD0FE056A4D62357ADF7BBB3D29B2E52 /* Pods-demo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-demo-frameworks.sh"; sourceTree = "<group>"; };
+		B82FD6DBD4DD051006F9D90E2BD48CEC /* IRFingerPrintVerify.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRFingerPrintVerify.h; path = IRPasscode/Class/SecurityView/IRFingerPrintVerify.h; sourceTree = "<group>"; };
+		BE00644715D0999EFE975AC6648380E2 /* IRPasscodeView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRPasscodeView.h; path = IRPasscode/Class/SecurityView/IRPasscodeView.h; sourceTree = "<group>"; };
+		C22FDEC8AE8758BB0551E9B465ED5D61 /* IRSecurityPinViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRSecurityPinViewController.h; path = IRPasscode/Class/SecurityView/IRSecurityPinViewController.h; sourceTree = "<group>"; };
+		C2D5D36891187BEBAC30F2687C4C3948 /* IRPasscode-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IRPasscode-prefix.pch"; sourceTree = "<group>"; };
+		CB483186C27C09F9AB03893BEB3A6301 /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = IRPasscode/Assets.xcassets; sourceTree = "<group>"; };
+		CFB2DEC05B9FD3A30ED7DC3B82660E1D /* IRCustomIconButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRCustomIconButton.h; path = IRPasscode/Class/CustomView/IRCustomIconButton.h; sourceTree = "<group>"; };
+		CFF2AB7C69AC6B752A32C0A345CAC16B /* UICKeyChainStore-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UICKeyChainStore-dummy.m"; sourceTree = "<group>"; };
+		D46826DA8E6CB76659B2512A1EE97B78 /* UICKeyChainStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = UICKeyChainStore.m; path = Lib/UICKeyChainStore/UICKeyChainStore.m; sourceTree = "<group>"; };
+		D5A7CFD73AEB2FE7E6395944A59E43BF /* UICKeyChainStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = UICKeyChainStore.h; path = Lib/UICKeyChainStore/UICKeyChainStore.h; sourceTree = "<group>"; };
+		DA3DB9E15F6B39F005E69ED2566B1863 /* IRPasscode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRPasscode.h; path = IRPasscode/IRPasscode.h; sourceTree = "<group>"; };
+		DCAF7FAB437AC809FEE5004B2935E64E /* IRSecurityPinButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IRSecurityPinButton.h; path = IRPasscode/Class/SecurityView/IRSecurityPinButton.h; sourceTree = "<group>"; };
+		E7CB38A3B5652EB1598397AA9F403640 /* IRSecurityPinViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IRSecurityPinViewController.m; path = IRPasscode/Class/SecurityView/IRSecurityPinViewController.m; sourceTree = "<group>"; };
+		EA96317F8DBE2C7048B863DEF1B67E14 /* Pods-demo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-demo-acknowledgements.plist"; sourceTree = "<group>"; };
+		F255D5CFEC968EAA7A10001780390FDB /* IRPasscode.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IRPasscode.modulemap; sourceTree = "<group>"; };
+		FCB8BCC2B026CCD4D6E9AEEDE40C8DC7 /* IRPasscode-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IRPasscode-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		15DFDDFB9705D9049C045A8329205A94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7D22E930B1F544444E5E6285969EDD7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDBFBF5FE336FC31D82C5E54E0F268A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				470538F64852E3D6F02BC01329A04179 /* Foundation.framework in Frameworks */,
+				03636ACB9870181418FAFD29AE8AACEC /* UICKeyChainStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3660CD33C9B7053BC367BB305E698348 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C91807BDAA7DE49B2E2E73775517C9C /* Foundation.framework in Frameworks */,
+				63EA0DF98D8F3548EBEDABFA5512821F /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		010BE72060BE9C436DCD21D914C87A54 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17BEA8B0CFAA0A24F4FE171704D88BF7 /* UICKeyChainStore.framework */,
+				F2E7C4AD578D32FE9D4D8A750F41C179 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1BD6C3104CA31A01D4BBB2A77E38D49A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2945BCDBC8798BEA661C04FEB7775F58 /* IRPasscode */,
+				8C5851613DCFA91AEC689CB5522BD090 /* UICKeyChainStore */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2945BCDBC8798BEA661C04FEB7775F58 /* IRPasscode */ = {
+			isa = PBXGroup;
+			children = (
+				4397BDF6E8A7CA456C14ECDC0AA45CFC /* ColorDefine.h */,
+				CFB2DEC05B9FD3A30ED7DC3B82660E1D /* IRCustomIconButton.h */,
+				78D604F5A05C8D6145429F3484D6B4F5 /* IRCustomIconButton.m */,
+				B82FD6DBD4DD051006F9D90E2BD48CEC /* IRFingerPrintVerify.h */,
+				4545353101C233EFE2E4A1425415C491 /* IRFingerPrintVerify.m */,
+				7B719CD946C1628B87DD42AB1A0EE4F0 /* IRLanguageManager.h */,
+				A955C51C900C5C3D21A70D8F3FFACF71 /* IRLanguageManager.m */,
+				DA3DB9E15F6B39F005E69ED2566B1863 /* IRPasscode.h */,
+				3183F7E98BB72A324C3F7789084E36F5 /* IRPasscodeLockSettingViewController.h */,
+				948AAE81348AD9DCB3E44A7BC0556832 /* IRPasscodeLockSettingViewController.m */,
+				BE00644715D0999EFE975AC6648380E2 /* IRPasscodeView.h */,
+				7376EAE99248A40C1741CAC91E64F55F /* IRPasscodeView.m */,
+				DCAF7FAB437AC809FEE5004B2935E64E /* IRSecurityPinButton.h */,
+				7E425871CA94DE623A8E45EF286523FB /* IRSecurityPinButton.m */,
+				0020003B35C9287DB6C5740E8B65EC71 /* IRSecurityPinManager.h */,
+				8FA365ACF49306D7DE2033859E6F60BC /* IRSecurityPinManager.m */,
+				C22FDEC8AE8758BB0551E9B465ED5D61 /* IRSecurityPinViewController.h */,
+				E7CB38A3B5652EB1598397AA9F403640 /* IRSecurityPinViewController.m */,
+				42A3F4BA107BF4C96D1C2600A92B644A /* NSBundle+IRLocalizedString.h */,
+				8052D610592E2466F025354F499A843A /* NSBundle+IRLocalizedString.m */,
+				303BF0362A704D69C308988E69EC3174 /* UIColor+Helper.h */,
+				8ED724CCFB0D70204CA9D8D4981AA0A0 /* UIColor+Helper.m */,
+				232D80F81E5C9FC4FD80DDDF82A0A9BC /* UIImage+Bundle.h */,
+				A76D07578C3CBCFB6A741B542E2621B0 /* UIImage+Bundle.m */,
+				12C87EAEC83BB47A806E3FF0B239FA5B /* Utilities.h */,
+				644BCC96A24505D4948042A7940DD4F5 /* Utilities.m */,
+				9131FD931DD716B89C6DEBC14B0A0D3B /* Resources */,
+				CA39B7693983DDDDBAB7DE8E241BCC6C /* Support Files */,
+			);
+			name = IRPasscode;
+			path = IRPasscode;
+			sourceTree = "<group>";
+		};
+		71F577F123BB8121C79B004A6BAA1F45 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				101154812BF3AAAF50B8C9466DF4C6E4 /* IRPasscode.framework */,
+				620C2E500E91AE09F121C9670613B82F /* Pods_demo.framework */,
+				A0A4D131DB063279AE8AF52001C682FE /* UICKeyChainStore.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8C5851613DCFA91AEC689CB5522BD090 /* UICKeyChainStore */ = {
+			isa = PBXGroup;
+			children = (
+				D5A7CFD73AEB2FE7E6395944A59E43BF /* UICKeyChainStore.h */,
+				D46826DA8E6CB76659B2512A1EE97B78 /* UICKeyChainStore.m */,
+				FDF346058D901DBB2BFAF1F3B3550D6C /* Support Files */,
+			);
+			name = UICKeyChainStore;
+			path = UICKeyChainStore;
+			sourceTree = "<group>";
+		};
+		9131FD931DD716B89C6DEBC14B0A0D3B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB483186C27C09F9AB03893BEB3A6301 /* Assets.xcassets */,
+				2CEC664779044E4F821F6BC16175AD21 /* IRPasscodeBundle.bundle */,
+				24783EAE9C541170005EC3745C73FAFA /* IRPasscodeLockSettingViewController.xib */,
+				567D10635AAA6D6000DE55E53EBEF7E9 /* IRSecurityPinViewController.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A93195AB5748F7569134F397E2674D09 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBA4AB0AD989728D60465BDAA2076BA2 /* Pods-demo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CA39B7693983DDDDBAB7DE8E241BCC6C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F255D5CFEC968EAA7A10001780390FDB /* IRPasscode.modulemap */,
+				6B7DBCC1FE0FBBC6AF5131E720EE17D5 /* IRPasscode.xcconfig */,
+				9FBF10A0BF3FA305B5FC9F7E6A235911 /* IRPasscode-dummy.m */,
+				35C3A3D2E899152EF879D20F9EAC6DA7 /* IRPasscode-Info.plist */,
+				C2D5D36891187BEBAC30F2687C4C3948 /* IRPasscode-prefix.pch */,
+				FCB8BCC2B026CCD4D6E9AEEDE40C8DC7 /* IRPasscode-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IRPasscode";
+			sourceTree = "<group>";
+		};
+		CBA4AB0AD989728D60465BDAA2076BA2 /* Pods-demo */ = {
+			isa = PBXGroup;
+			children = (
+				8304FA02D2A592F4996BA412884CCA37 /* Pods-demo.modulemap */,
+				4FE45AE5DAA8B1DF7D6099181AD9FA0A /* Pods-demo-acknowledgements.markdown */,
+				EA96317F8DBE2C7048B863DEF1B67E14 /* Pods-demo-acknowledgements.plist */,
+				7C5DC5ABE867DFAFEEFE65EB904EC044 /* Pods-demo-dummy.m */,
+				AD0FE056A4D62357ADF7BBB3D29B2E52 /* Pods-demo-frameworks.sh */,
+				171784CD7F89555EFD77B2A0479363CA /* Pods-demo-Info.plist */,
+				919022BC48F9439E29669B27B83A8482 /* Pods-demo-umbrella.h */,
+				AA6F28936150B774D174F70EC133595F /* Pods-demo.debug.xcconfig */,
+				056C11651D9181CFD60992F50710A1E6 /* Pods-demo.release.xcconfig */,
+			);
+			name = "Pods-demo";
+			path = "Target Support Files/Pods-demo";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				010BE72060BE9C436DCD21D914C87A54 /* Frameworks */,
+				1BD6C3104CA31A01D4BBB2A77E38D49A /* Pods */,
+				71F577F123BB8121C79B004A6BAA1F45 /* Products */,
+				A93195AB5748F7569134F397E2674D09 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F2E7C4AD578D32FE9D4D8A750F41C179 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				460FF873481B3F87C44EEA8E0AE764B1 /* Foundation.framework */,
+				1677E6A63B4BB0B24F36E97382B3C261 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FDF346058D901DBB2BFAF1F3B3550D6C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				969AEC1E26DA539C6D7EF7C62D74E06E /* UICKeyChainStore.modulemap */,
+				90A4052C43A6928606C513113AF8A723 /* UICKeyChainStore.xcconfig */,
+				CFF2AB7C69AC6B752A32C0A345CAC16B /* UICKeyChainStore-dummy.m */,
+				1535BD4A38E6C13ACCBC81A824BB78F3 /* UICKeyChainStore-Info.plist */,
+				05C2FFD5036D854D1744084937CFE76F /* UICKeyChainStore-prefix.pch */,
+				3339BC519E4E66CEB777EC399C7B0924 /* UICKeyChainStore-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UICKeyChainStore";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		48471FA5B73786F6D3E0B9AC017B396F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				837963EE3379ED0E485E306FD325095C /* Pods-demo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		523667C89D0CDCC5AC591A31B0E239CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA7025C07CD68BD2987421C07BA83331 /* UICKeyChainStore-umbrella.h in Headers */,
+				B36B1582DADD7C28F26AC0353B26B91E /* UICKeyChainStore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B918B7EEAD28BBB4CA6EEA39BE1B0671 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				308AF19CF2659B4DEE390B9A6C66D52E /* ColorDefine.h in Headers */,
+				6027468E96F04039A365F39E1B8914D2 /* IRCustomIconButton.h in Headers */,
+				991B967D053CD484BD88285C01A50ADD /* IRFingerPrintVerify.h in Headers */,
+				16CF16A5F6EED6D79E833CB0F2F77089 /* IRLanguageManager.h in Headers */,
+				52BD791D268FA18940E4A8E9ABEC04CE /* IRPasscode-umbrella.h in Headers */,
+				567D4ECF7886A5ACFD55C97E245CAC8D /* IRPasscode.h in Headers */,
+				E9E1E16CD01BA3A2B506FE9B4E301708 /* IRPasscodeLockSettingViewController.h in Headers */,
+				8D674DD50688478C3DD81F408FB3FDB4 /* IRPasscodeView.h in Headers */,
+				61D1268E163753A464948CFDA0373F4B /* IRSecurityPinButton.h in Headers */,
+				EB2644FB33F81EA665D69017D28AE7AD /* IRSecurityPinManager.h in Headers */,
+				EE8995F3C825DF04782DF4EF78E95F31 /* IRSecurityPinViewController.h in Headers */,
+				B0F325DE0FD1C91DAE3A2DC7030D73A6 /* NSBundle+IRLocalizedString.h in Headers */,
+				AA79C1135D17B6BB7926CD612174ECE9 /* UIColor+Helper.h in Headers */,
+				9CCAD362E849C34DA04B66559A90FA51 /* UIImage+Bundle.h in Headers */,
+				382028FB17E663F29C51CA43DDD5F63A /* Utilities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06211BFED24C96E7ADA9B774FAC62F28 /* Pods-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 153205267AFF81EF27293795BB1BD0C6 /* Build configuration list for PBXNativeTarget "Pods-demo" */;
+			buildPhases = (
+				48471FA5B73786F6D3E0B9AC017B396F /* Headers */,
+				F7305A46F5F1772C912D2F25E313EEE9 /* Sources */,
+				15DFDDFB9705D9049C045A8329205A94 /* Frameworks */,
+				A18CAD0AC3CC923122612A21908C149F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C8E32C587A1D99D14FB24368CAF5CCB5 /* PBXTargetDependency */,
+				F838DD9A9346D97796422019A10ED1BC /* PBXTargetDependency */,
+			);
+			name = "Pods-demo";
+			productName = "Pods-demo";
+			productReference = 620C2E500E91AE09F121C9670613B82F /* Pods_demo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6782D808343CEB2EC3097B4B53BAE0A1 /* IRPasscode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DDDF8436FAB6FA15650CA2EF5F31BEEE /* Build configuration list for PBXNativeTarget "IRPasscode" */;
+			buildPhases = (
+				B918B7EEAD28BBB4CA6EEA39BE1B0671 /* Headers */,
+				2CC51D020A9A9B89C5DEAD34E8412C2D /* Sources */,
+				2FDBFBF5FE336FC31D82C5E54E0F268A /* Frameworks */,
+				B2A1AD83DD647A60F109BE4DE257D9BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28C70C41E7AA4C837AE609570AB19740 /* PBXTargetDependency */,
+			);
+			name = IRPasscode;
+			productName = IRPasscode;
+			productReference = 101154812BF3AAAF50B8C9466DF4C6E4 /* IRPasscode.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7406ECC476A62C8FA502AD0E8D1240BE /* UICKeyChainStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F93B11327F24B1DBD0B5707C389D4E /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */;
+			buildPhases = (
+				523667C89D0CDCC5AC591A31B0E239CE /* Headers */,
+				F0771A7AE00B1E33E05133B36ABDC82B /* Sources */,
+				3660CD33C9B7053BC367BB305E698348 /* Frameworks */,
+				003F608F866843021F9243ECA51CE372 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UICKeyChainStore;
+			productName = UICKeyChainStore;
+			productReference = A0A4D131DB063279AE8AF52001C682FE /* UICKeyChainStore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 71F577F123BB8121C79B004A6BAA1F45 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6782D808343CEB2EC3097B4B53BAE0A1 /* IRPasscode */,
+				06211BFED24C96E7ADA9B774FAC62F28 /* Pods-demo */,
+				7406ECC476A62C8FA502AD0E8D1240BE /* UICKeyChainStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		003F608F866843021F9243ECA51CE372 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A18CAD0AC3CC923122612A21908C149F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2A1AD83DD647A60F109BE4DE257D9BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB64A983D9301B71087BC923E54E30B /* Assets.xcassets in Resources */,
+				BCC8EBB6A64AB400868F9EB768139595 /* IRPasscodeBundle.bundle in Resources */,
+				7102F4B90FCB51093A29BCF634D0F2AB /* IRPasscodeLockSettingViewController.xib in Resources */,
+				E6E3C568462D6AD8F96F56BAD81EF676 /* IRSecurityPinViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2CC51D020A9A9B89C5DEAD34E8412C2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF6D978C894B9D10468CA63408322A4 /* IRCustomIconButton.m in Sources */,
+				F87E1815EB87B6E353F6C2A63F364E75 /* IRFingerPrintVerify.m in Sources */,
+				77C9377A60360ED72999311F3F34BD6C /* IRLanguageManager.m in Sources */,
+				C27970FC775F7CD1AEF9A1E154DCB7F8 /* IRPasscode-dummy.m in Sources */,
+				35348DA145056A3EF11EA0F182A9C9CE /* IRPasscodeLockSettingViewController.m in Sources */,
+				48A8A355584A22E10ABCB01487C52DA1 /* IRPasscodeView.m in Sources */,
+				FE82C28C3D0AD7805E270D6A437A2AE0 /* IRSecurityPinButton.m in Sources */,
+				47522BB6A76EFF432391C87F92FBE296 /* IRSecurityPinManager.m in Sources */,
+				BD4F792DA3099CB6943ED4297E484F18 /* IRSecurityPinViewController.m in Sources */,
+				D9E548184D41083C63A6D4A3F8829FDD /* NSBundle+IRLocalizedString.m in Sources */,
+				BD3B2239F3514DFCC3F5A4C046264069 /* UIColor+Helper.m in Sources */,
+				EC9CCA82D376736E436BA72E429D212C /* UIImage+Bundle.m in Sources */,
+				E550EC1C21E55DA76AC440C3E15036E6 /* Utilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0771A7AE00B1E33E05133B36ABDC82B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFDA55631A4A14A42C0230DDC7DDC647 /* UICKeyChainStore-dummy.m in Sources */,
+				84B3CCA944D67DDEDF5E094034C1A03C /* UICKeyChainStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7305A46F5F1772C912D2F25E313EEE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A86244CA4374EA21A636DD7F797B52 /* Pods-demo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28C70C41E7AA4C837AE609570AB19740 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = 7406ECC476A62C8FA502AD0E8D1240BE /* UICKeyChainStore */;
+			targetProxy = CDAAADE00E20C82419C3A439D732ED6F /* PBXContainerItemProxy */;
+		};
+		C8E32C587A1D99D14FB24368CAF5CCB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IRPasscode;
+			target = 6782D808343CEB2EC3097B4B53BAE0A1 /* IRPasscode */;
+			targetProxy = 460EF6AC1376A97003C7CD145C4F9107 /* PBXContainerItemProxy */;
+		};
+		F838DD9A9346D97796422019A10ED1BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = UICKeyChainStore;
+			target = 7406ECC476A62C8FA502AD0E8D1240BE /* UICKeyChainStore */;
+			targetProxy = 1B2861E0117BB89740B2FC8E0DCAF839 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		144B45B0E83B788C3A2DDCA23DFA38BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA6F28936150B774D174F70EC133595F /* Pods-demo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-demo/Pods-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-demo/Pods-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		34FCECEB75F09F9D10549922EECE562F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7DBCC1FE0FBBC6AF5131E720EE17D5 /* IRPasscode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IRPasscode/IRPasscode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IRPasscode/IRPasscode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IRPasscode/IRPasscode.modulemap";
+				PRODUCT_MODULE_NAME = IRPasscode;
+				PRODUCT_NAME = IRPasscode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		614C3483F0B71848A540B75CE44F87B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A4052C43A6928606C513113AF8A723 /* UICKeyChainStore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore.modulemap";
+				PRODUCT_MODULE_NAME = UICKeyChainStore;
+				PRODUCT_NAME = UICKeyChainStore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F17DC3A99F99FBAD606CE6963886315 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		916E0404255105F480DC4950B7625F7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9D64CBE423655983D113DE6971640248 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90A4052C43A6928606C513113AF8A723 /* UICKeyChainStore.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UICKeyChainStore/UICKeyChainStore-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UICKeyChainStore/UICKeyChainStore.modulemap";
+				PRODUCT_MODULE_NAME = UICKeyChainStore;
+				PRODUCT_NAME = UICKeyChainStore;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D1A72C82945B6DE245EC1B1555C0D079 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B7DBCC1FE0FBBC6AF5131E720EE17D5 /* IRPasscode.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IRPasscode/IRPasscode-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IRPasscode/IRPasscode-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IRPasscode/IRPasscode.modulemap";
+				PRODUCT_MODULE_NAME = IRPasscode;
+				PRODUCT_NAME = IRPasscode;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D5706FFA36B07C4756A972F62966A206 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 056C11651D9181CFD60992F50710A1E6 /* Pods-demo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-demo/Pods-demo-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-demo/Pods-demo.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11F93B11327F24B1DBD0B5707C389D4E /* Build configuration list for PBXNativeTarget "UICKeyChainStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				614C3483F0B71848A540B75CE44F87B5 /* Debug */,
+				9D64CBE423655983D113DE6971640248 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		153205267AFF81EF27293795BB1BD0C6 /* Build configuration list for PBXNativeTarget "Pods-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				144B45B0E83B788C3A2DDCA23DFA38BA /* Debug */,
+				D5706FFA36B07C4756A972F62966A206 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916E0404255105F480DC4950B7625F7A /* Debug */,
+				8F17DC3A99F99FBAD606CE6963886315 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DDDF8436FAB6FA15650CA2EF5F31BEEE /* Build configuration list for PBXNativeTarget "IRPasscode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34FCECEB75F09F9D10549922EECE562F /* Debug */,
+				D1A72C82945B6DE245EC1B1555C0D079 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

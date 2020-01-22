@@ -1,0 +1,6 @@
+framework module IRPasscode {
+  umbrella header "IRPasscode-umbrella.h"
+
+  export *
+  module * { export * }
+}
