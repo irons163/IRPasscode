@@ -69,9 +69,8 @@
     
     if(isChangeCode)
         securityPinViewController.shouldResetPinCode = isChangeCode;
-    //    [[SecurityPinManager sharedInstance] presentViewController:securityPinViewController animated:YES completion:nil];
-    //    [SecurityPinManager sharedInstance].window.rootViewController = securityPinViewController;
     
+    securityPinViewController.modalPresentationStyle = UIModalPresentationFullScreen;
     [self.window.rootViewController presentViewController:securityPinViewController animated:flag completion:completion];
 }
 
@@ -104,20 +103,7 @@
         }];
 }
 
-//- (void)presentSecurityPinViewControllerWithAnimated: (BOOL)flag completion:(void (^ __nullable)(void))completion result:(ResultBlock _Nullable )result {
-//    self.result = result;
-//    [self presentSecurityPinViewControllerWithAnimated:flag completion:completion cancellable:NO isChangeCode:NO];
-//
-//    [MHD_FingerPrintVerify mhd_fingerPrintLocalAuthenticationFallBackTitle:nil localizedReason:@"指紋/臉部辨識" callBack:^(BOOL isSuccess, NSError * _Nullable error, NSString *referenceMsg) {
-////        [btn setTitle:referenceMsg forState:UIControlStateNormal];
-//        if (isSuccess) {
-//            [self.securityPinViewController unlockPinCode];
-//        }
-//    }];
-//}
-
 - (void)cleanup {
-//    [[NSNotificationCenter defaultCenter] removeObserver:self];
     [[[[UIApplication sharedApplication] delegate] window] makeKeyWindow];
     [self.window removeFromSuperview];
     self.window = nil;

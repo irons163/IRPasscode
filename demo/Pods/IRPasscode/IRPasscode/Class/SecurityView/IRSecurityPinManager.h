@@ -30,10 +30,10 @@ typedef void (^ResultBlock)(IRSecurityResultType type);
 - (void)removePinCode;
 
 - (void)presentSecurityPinViewControllerForChangePasscodeWithAnimated: (BOOL)flag completion:(void (^ __nullable)(void))completion result:(ResultBlock _Nullable )result;
-//- (void)presentSecurityPinViewControllerWithAnimated: (BOOL)flag completion:(void (^ __nullable)(void))completion;
 - (void)presentSecurityPinViewControllerForCreateWithAnimated: (BOOL)flag completion:(void (^ __nullable)(void))completion result:(ResultBlock _Nullable )result;
 - (void)presentSecurityPinViewControllerForRemoveWithAnimated: (BOOL)flag completion:(void (^ __nullable)(void))completion result:(ResultBlock _Nullable )result;
 - (void)presentSecurityPinViewControllerForUnlockWithAnimated: (BOOL)flag completion:(void (^ __nullable)(void))completion result:(ResultBlock _Nullable )result;
+
 @end
 
 

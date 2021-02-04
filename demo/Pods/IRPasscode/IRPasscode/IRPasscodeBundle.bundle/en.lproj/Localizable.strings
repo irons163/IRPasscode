@@ -17,4 +17,4 @@
 "ConfirmPinMsgString" = "Enter the passcode again";
 "EnterPinMsgString" = "Enter the passcode below";
 "EnterOldPinMsgString" = "Enter the old passcode below";
-"PasscodeHintString" = "If you forget your passcode, you'll have to delete and reinstall APP. Please note, all you managed files will be delete as well.";
+"PasscodeHintString" = "If you forget your passcode, you'll have to delete and reinstall APP. Please note, all you managed data will be delete as well.";
